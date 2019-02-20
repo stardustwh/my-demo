@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="gs-uploading-files:war">
+    <output-path>$PROJECT_DIR$/gs-uploading-files/target</output-path>
+    <root id="archive" name="gs-uploading-files.war">
+      <element id="artifact" artifact-name="gs-uploading-files:war exploded" />
+    </root>
+  </artifact>
+</component>
