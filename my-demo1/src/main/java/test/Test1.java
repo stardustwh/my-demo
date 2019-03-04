@@ -22,10 +22,38 @@ public class Test1 {
         //Java 方式
         new Thread( () -> System.out.println("java 8 现在。。。")).start();
 
-        //2.使用lambda表达式进行事件处理
-        //Java 8之前
 
 
+    }
+
+    class SharedVariableThread extends Thread {
+        private int count = 5;
+
+        @Override
+        public void run() {
+            super.run();
+            count--;
+            System.out.println("由 " + SharedVariableThread.currentThread().getName() + "计算，count=" + count);
+        }
+
+
+    }
+
+    @Test
+    public void test1(){
+
+        SharedVariableThread mythread = new SharedVariableThread();
+
+        Thread a = new Thread(mythread, "A");
+        Thread b = new Thread(mythread, "B");
+        Thread c = new Thread(mythread, "C");
+        Thread d = new Thread(mythread, "D");
+        Thread e = new Thread(mythread, "E");
+        a.start();
+        b.start();
+        c.start();
+        d.start();
+        e.start();
     }
 
 }
