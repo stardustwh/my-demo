@@ -7,14 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="gs-client-side-load-balancing" />
+        <module name="gs-scheduling-tasks" />
         <module name="gs-uploading-files" />
         <module name="my-demo1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="gs-client-side-load-balancing" target="8" />
+      <module name="gs-client-side-load-balancing" target="1.5" />
+      <module name="gs-scheduling-tasks" target="1.8" />
       <module name="gs-uploading-files" target="1.8" />
-      <module name="my-demo1" target="8" />
+      <module name="my-demo1" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
