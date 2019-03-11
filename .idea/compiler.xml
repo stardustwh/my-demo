@@ -7,6 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="gs-client-side-load-balancing" />
+        <module name="gs-consuming-rest" />
+        <module name="gs-ioc-aop" />
+        <module name="gs-relational-data-access" />
         <module name="gs-scheduling-tasks" />
         <module name="gs-uploading-files" />
         <module name="my-demo1" />
@@ -14,6 +17,9 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="gs-client-side-load-balancing" target="1.5" />
+      <module name="gs-consuming-rest" target="1.8" />
+      <module name="gs-ioc-aop" target="8" />
+      <module name="gs-relational-data-access" target="1.8" />
       <module name="gs-scheduling-tasks" target="1.8" />
       <module name="gs-uploading-files" target="1.8" />
       <module name="my-demo1" target="1.5" />
