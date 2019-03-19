@@ -22,7 +22,7 @@
       <module name="gs-relational-data-access" target="1.8" />
       <module name="gs-scheduling-tasks" target="1.8" />
       <module name="gs-uploading-files" target="1.8" />
-      <module name="my-demo1" target="1.5" />
+      <module name="my-demo1" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
