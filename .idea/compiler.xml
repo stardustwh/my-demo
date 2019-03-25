@@ -18,7 +18,7 @@
     <bytecodeTargetLevel>
       <module name="gs-client-side-load-balancing" target="1.5" />
       <module name="gs-consuming-rest" target="1.8" />
-      <module name="gs-ioc-aop" target="8" />
+      <module name="gs-ioc-aop" target="1.5" />
       <module name="gs-relational-data-access" target="1.8" />
       <module name="gs-scheduling-tasks" target="1.8" />
       <module name="gs-uploading-files" target="1.8" />
