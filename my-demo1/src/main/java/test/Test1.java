@@ -3,7 +3,7 @@ package test;
 import org.junit.Test;
 
 /**
- * Java 8 lambda表达式例子
+ * Java 8 lambda表达式例子 ---------------
  */
 
 public class Test1 {
@@ -54,6 +54,13 @@ public class Test1 {
         c.start();
         d.start();
         e.start();
+    }
+
+    public Integer test2(Integer i,Integer j){
+
+
+
+        return null;
     }
 
 }
