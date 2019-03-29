@@ -3,7 +3,7 @@ package test;
 import org.junit.Test;
 
 /**
- * Java 8 lambda表达式例子 ---------------
+ * Java 8 lambda表达式例子
  */
 
 public class Test1 {
