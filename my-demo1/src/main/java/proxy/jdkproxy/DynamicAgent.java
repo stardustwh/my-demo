@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
+import java.time.LocalDate;
 
 /**
  * jdk动态代理的缺点——被代理的类一定要实现了某个接口。
@@ -36,9 +37,10 @@ public class DynamicAgent {
 
     @Test
     public void test1(){
+        System.out.println(LocalDate.now().getMonthValue());
         //注意一定要返回接口，不能返回实现类否则会报错
-        Fruit fruit = (Fruit)DynamicAgent.agent(Fruit.class,new Apple());
-        fruit.show();
+        //Fruit fruit = (Fruit)DynamicAgent.agent(Fruit.class,new Apple());
+        //fruit.show();
     }
 
 }

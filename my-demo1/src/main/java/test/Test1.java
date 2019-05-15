@@ -63,4 +63,13 @@ public class Test1 {
         return null;
     }
 
+    @Test
+    public void test3(){
+
+        Double a = 0.0;
+        Double b = 0.0;
+        Double count = a+b;
+        System.out.println(count+"__--------------------");
+    }
+
 }
