@@ -2,6 +2,11 @@ package test;
 
 import org.junit.Test;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
 /**
  * Java 8 lambda表达式例子
  */
@@ -69,7 +74,21 @@ public class Test1 {
         Double a = 0.0;
         Double b = 0.0;
         Double count = a+b;
-        System.out.println(count+"__--------------------");
+        long x = 1390147200000L;
+        System.out.println(DateUtil.getStringByTimeStemp((int)(x/1000))+"__--------------------");
+    }
+
+
+    @Test
+    public void test4(){
+
+        String[] arrs =  {"aa","bbb","ccc"};
+
+        List<String> list = Arrays.stream(arrs).collect(Collectors.toList());
+        Arrays.stream(arrs).filter(s->s.startsWith("a")).forEach(System.out::println);
+
+        //list.get(0) -> System.out::println;
+        System.out.println(list.get(0));
     }
 
 }

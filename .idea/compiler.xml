@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="bookstore" />
+        <module name="cron-demo" />
         <module name="gs-client-side-load-balancing" />
         <module name="gs-consuming-rest" />
         <module name="gs-ioc-aop" />
@@ -20,6 +21,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="bookstore" target="1.8" />
+      <module name="cron-demo" target="1.5" />
       <module name="gs-client-side-load-balancing" target="1.5" />
       <module name="gs-consuming-rest" target="1.8" />
       <module name="gs-ioc-aop" target="1.5" />
