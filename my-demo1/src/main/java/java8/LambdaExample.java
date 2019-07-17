@@ -33,6 +33,30 @@ public class LambdaExample {
 
     }
 
+    public static <T> List<T> filter(List<T> list,Predicate<T> p){
+        List<T> result = new ArrayList<>();
+        for(T e: list){
+            if(p.test(e)){
+                result.add(e);
+            }
+        }
+        return result;
+    }
+
+    /**
+     * java行为参数化
+     */
+    @Test
+    public void test(){
+        List<Integer> numbers = new ArrayList<>();
+        for(int i =0; i<10; i++){
+            numbers.add(i);
+        }
+
+        List<Integer> evenNumbers = filter(numbers,(Integer i) -> i % 2 == 0);
+        System.out.println(evenNumbers);
+    }
+
 
 
 }
