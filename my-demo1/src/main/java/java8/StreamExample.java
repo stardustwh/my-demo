@@ -25,7 +25,7 @@ public class StreamExample {
                 .filter((s)->s.startsWith("a"))
                 .forEach(System.out::println);
 */      //上面写法为函数式编程简写。上下效果一致
-        stringList
+/*        stringList
                 .stream()
                 .filter((s)->s.startsWith("a"))
                 .forEach(x -> {
@@ -38,7 +38,7 @@ public class StreamExample {
                 .stream()
                 .filter((s)->s.startsWith("a"))
                 .sorted()
-                .forEach(System.out::println);
+                .forEach(System.out::println);*/
 
         //Map 映射
         stringList

@@ -1,0 +1,7 @@
+﻿String userstr = operationService.getRestTemplate("findAllInstitutionsUserByPositionAndDataRole",user1.getUid(),String.class);
+                                                List<YdInstitutionsUser> users1 = JSONObject.parseArray(userstr,YdInstitutionsUser.class);
+                                                List<Integer> uids = new ArrayList<>();
+                                                for (YdInstitutionsUser ydInstitutionsUser : users1){
+                                                    uids.add(ydInstitutionsUser.getUid());
+                                                }
+                                                /*List<Integer> uids = homeService.getRestTemplate("ydSsoInstitutionsUserController/getSubordinate",user1.getUid(),List.class);*/

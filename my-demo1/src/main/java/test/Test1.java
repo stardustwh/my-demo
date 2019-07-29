@@ -7,6 +7,7 @@ import sun.net.www.http.HttpClient;
 
 import java.lang.reflect.Array;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.List;
@@ -182,10 +183,27 @@ public final class Test1 implements java.io.Serializable, Comparable<String>, Ch
     }
 
     @Test
-    public void test7(){
+    public int test7(){
 
-         String s = "22";
-         s.hashCode();
+        int a = 0;
+        List<Integer> list = new ArrayList<>();
+        for (int z = 0; z <5; z++){
+            list.add(z);
+        }
+        list.forEach(b -> {
+            for (int i = 0; i < 10; i++) {
+                if (i == 2) {
+                    return;
+                }
+                for (int j = 0; j < 5; j++) {
+                    System.out.println("+++++++++++++~");
+                }
+            }
+        });
+
+
+        return a;
+
 
     }
 
