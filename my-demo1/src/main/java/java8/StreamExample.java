@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class StreamExample {
 
@@ -77,6 +78,14 @@ public class StreamExample {
         System.out.println(startsWithB);
 
         //Reduce 规约
+
+        Optional<String> reduced = stringList
+                .stream()
+                .sorted()
+                .reduce((s1, s2) -> s1 + "#" + s2);
+
+        reduced.ifPresent(System.out::println);
+
 
     }
 }
