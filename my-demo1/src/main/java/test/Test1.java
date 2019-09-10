@@ -2,10 +2,12 @@ package test;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import org.junit.Assert;
 import org.junit.Test;
 import sun.net.www.http.HttpClient;
 
 import java.lang.reflect.Array;
+import java.math.BigDecimal;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -23,6 +25,7 @@ import static org.junit.Assert.assertEquals;
 public final class Test1 implements java.io.Serializable, Comparable<String>, CharSequence  {
 
 
+    private static final long serialVersionUID = -2213970943999976456L;
 
     @Test
     public void test(){
@@ -162,7 +165,7 @@ public final class Test1 implements java.io.Serializable, Comparable<String>, Ch
         JSONArray jsonArray = jsonObject.getJSONArray("data");
         JSONObject jsonObject1 = JSONObject.parseObject(jsonArray.toJSONString());*/
 
-        String[] weekDays = {"星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"};
+    /*    String[] weekDays = {"星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"};
         Calendar calendar=Calendar.getInstance();
         calendar.set(2017, 6, 1);
         long next =calendar.getTimeInMillis();
@@ -177,12 +180,16 @@ public final class Test1 implements java.io.Serializable, Comparable<String>, Ch
             System.out.println(weekDays[w]);
             int i=1;
             calendar.add(Calendar.DAY_OF_MONTH, i++);
-        }
+        }*/
+
+        BigDecimal p1 = new BigDecimal(100);
+        BigDecimal p2 = new BigDecimal(50);
+        System.out.println(p1.subtract(p2));
 
 
     }
 
-    @Test
+/*    @Test
     public int test7(){
 
         int a = 0;
@@ -200,11 +207,22 @@ public final class Test1 implements java.io.Serializable, Comparable<String>, Ch
                 }
             }
         });
+        BigDecimal p1 = new BigDecimal(100);
+        BigDecimal p2 = new BigDecimal(50);
+        System.out.println(p1.subtract(p2));
 
 
         return a;
 
 
+    }*/
+
+    @Test
+    public void test8() {
+        String a = null;
+        Assert.assertNotNull(a,"aaa");
+
+        System.out.println(a);
     }
 
 }

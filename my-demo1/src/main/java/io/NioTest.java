@@ -3,6 +3,7 @@ package io;
 import org.junit.Test;
 
 import java.io.*;
+import java.math.BigDecimal;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.charset.Charset;
@@ -59,6 +60,9 @@ public class NioTest {
         String filename = "out.txt";
         FileOutputStream fos = null;
 
+        BigDecimal p1 = new BigDecimal(100);
+        BigDecimal p2 = new BigDecimal(50);
+        System.out.println(p1.subtract(p2));
         try {
             fos = new FileOutputStream(new File(filename));
             FileChannel channel = fos.getChannel();
@@ -67,6 +71,7 @@ public class NioTest {
             System.out.println("初始容量和limit: " + src.capacity() + ","
                             + src.limit());
             int length = 0;
+
 
             while ((length = channel.write(src)) != 0) {
                 /**
