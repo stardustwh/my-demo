@@ -3,6 +3,9 @@ package leetcode.arithmetic;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * 无重复字符的最长子串
+ */
 public class Solution3 {
 
     public static int lengthOfLongestSubstring(String s) {
