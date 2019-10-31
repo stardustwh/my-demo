@@ -3,6 +3,9 @@ package beautifulconcurrent;
 import java.util.Queue;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.LockSupport;
+import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class TestLockModel {
 
@@ -14,7 +17,6 @@ public class TestLockModel {
     final static int queueSize = 10;
 
     public static void main(String[] args) {
-
         Thread producer = new Thread(new Runnable() {
             @Override
             public void run() {
